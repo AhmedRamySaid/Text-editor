@@ -1,0 +1,5 @@
+C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/CMakeFiles/Text_editor.dir
+C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/CMakeFiles/Text_editor_autogen_timestamp_deps.dir
+C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/CMakeFiles/Text_editor_autogen.dir

@@ -1,0 +1,25 @@
+# ninja log v6
+12	121	7551884081558992	Text_editor_autogen/timestamp	19850a0807718b74
+3009	3299	7551884110928749	Text_editor.exe	5e363103eebb05ca
+12	121	7551884081558992	Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+12	121	7551884081558992	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/timestamp	19850a0807718b74
+12	121	7551884081558992	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+122	2951	7551884082054324	CMakeFiles/Text_editor.dir/Text_editor_autogen/mocs_compilation.cpp.obj	b7a270d10f4f24ca
+684	3962	7551880407290425	CMakeFiles/Text_editor.dir/main.cpp.obj	e4de9b73316b46d1
+117	3005	7551880690524411	CMakeFiles/Text_editor.dir/mainwindow.cpp.obj	c5352881789cebef
+6	564	7551887184794072	build.ninja	6527e715860c502f
+125	3009	7551884082084342	CMakeFiles/Text_editor.dir/MainWindow.cpp.obj	db55fbc420ed1550
+12	646	7551888567281794	Text_editor_autogen/timestamp	19850a0807718b74
+12	646	7551888567281794	Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+12	646	7551888567281794	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/timestamp	19850a0807718b74
+12	646	7551888567281794	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+650	3620	7551888567823851	CMakeFiles/Text_editor.dir/main.cpp.obj	e4de9b73316b46d1
+646	3623	7551888567788661	CMakeFiles/Text_editor.dir/Text_editor_autogen/mocs_compilation.cpp.obj	b7a270d10f4f24ca
+12	671	7551888925230100	Text_editor_autogen/timestamp	19850a0807718b74
+12	671	7551888925230100	Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+12	671	7551888925230100	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/timestamp	19850a0807718b74
+12	671	7551888925230100	C:/Users/pc/CLionProjects/Text-editor/cmake-build-debug/Text_editor_autogen/mocs_compilation.cpp	19850a0807718b74
+677	4914	7551888925971827	CMakeFiles/Text_editor.dir/main.cpp.obj	e4de9b73316b46d1
+672	4936	7551888925916635	CMakeFiles/Text_editor.dir/Text_editor_autogen/mocs_compilation.cpp.obj	b7a270d10f4f24ca
+682	4963	7551888926011854	CMakeFiles/Text_editor.dir/mainwindow/mainwindow.cpp.obj	fb1753f7ccfb5c81
+4963	5398	7551888968828825	Text_editor.exe	5d28eecb9c0bb3db
