@@ -25,17 +25,32 @@ MainWindow::~MainWindow() {}
 
 void MainWindow::createActions()
 {
-    openAction = new QAction(tr("&Open"), this);
+    openAction = new QAction("&Open", this);
     openAction->setShortcut(QKeySequence::Open);
     connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
 
-    saveAction = new QAction(tr("&Save"), this);
-    saveAction->setShortcut(QKeySequence::Save);
+    saveAction = new QAction("&Save", this);
+    saveAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_S));;
     connect(saveAction, &QAction::triggered, this, &MainWindow::saveFile);
 
     exitAction = new QAction("&Exit", this);
-    exitAction->setShortcut(QKeySequence::Quit);
     connect(exitAction, &QAction::triggered, this, &MainWindow::exitApp);
+
+    boldAction = new QAction("&Bold", this);
+    boldAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_B));
+    connect(boldAction, &QAction::triggered, this, &MainWindow::makeBold);
+
+    incrementSizeAction = new QAction("&Bigger", this);
+    incrementSizeAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Up));;
+    connect(incrementSizeAction, &QAction::triggered, this, &MainWindow::increaseFontSize);
+
+    decrementSizeAction = new QAction("&Smaller", this);
+    decrementSizeAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down));;
+    connect(decrementSizeAction, &QAction::triggered, this, &MainWindow::decreaseFontSize);
+
+    italicAction = new QAction("&Italic", this);
+    italicAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_I));;
+    connect(italicAction, &QAction::triggered, this, &MainWindow::makeItalic);
 }
 
 void MainWindow::createMenu()
@@ -46,6 +61,11 @@ void MainWindow::createMenu()
     fileMenu->addAction(saveAction);
     fileMenu->addAction(exitAction);
 
+    QMenu *textMenu = menuBar()->addMenu("&Text");
+    textMenu->addAction(boldAction);
+    textMenu->addAction(incrementSizeAction);
+    textMenu->addAction(decrementSizeAction);
+    textMenu->addAction(italicAction);
 }
 
 void MainWindow::openFile()
@@ -83,6 +103,53 @@ void MainWindow::saveFile()
         } else {
             QMessageBox::warning(this, tr("Error"), tr("Could not save file"));
         }
+    }
+}
+
+void MainWindow::makeBold() {
+    QTextCursor cursor = textEdit->textCursor();  // Get the current cursor position
+    if (cursor.hasSelection()) {
+        // If text is selected, toggle bold for the selected text
+        QTextCharFormat format = cursor.charFormat();
+        format.setFontWeight(format.fontWeight() == QFont::Bold ? QFont::Normal : QFont::Bold);
+        cursor.mergeCharFormat(format);
+    }
+}
+
+void MainWindow::makeItalic()
+{
+    QTextCursor cursor = textEdit->textCursor();  // Get the current cursor position
+    if (cursor.hasSelection()) {
+        // If text is selected, toggle italic for the selected text
+        QTextCharFormat format = cursor.charFormat();
+        format.setFontItalic(!format.fontItalic());  // Toggle the italic style
+        cursor.mergeCharFormat(format);
+    }
+}
+
+void MainWindow::increaseFontSize()
+{
+    QTextCursor cursor = textEdit->textCursor();  // Get the current cursor position
+    if (cursor.hasSelection()) {
+        // If text is selected, increase the font size for the selected text
+        QFont currentFont = cursor.charFormat().font();
+        currentFont.setPointSize(currentFont.pointSize() + 1);  // Increase font size by 1
+        QTextCharFormat format = cursor.charFormat();
+        format.setFont(currentFont);
+        cursor.mergeCharFormat(format);
+    }
+}
+
+void MainWindow::decreaseFontSize()
+{
+    QTextCursor cursor = textEdit->textCursor();  // Get the current cursor position
+    if (cursor.hasSelection()) {
+        // If text is selected, increase the font size for the selected text
+        QFont currentFont = cursor.charFormat().font();
+        currentFont.setPointSize(currentFont.pointSize() - 1);  // Increase font size by 1
+        QTextCharFormat format = cursor.charFormat();
+        format.setFont(currentFont);
+        cursor.mergeCharFormat(format);
     }
 }
 

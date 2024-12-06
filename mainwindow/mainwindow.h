@@ -22,7 +22,10 @@ private slots:
     void openFile();
     void saveFile();
     void exitApp();
-
+    void makeBold();
+    void makeItalic();
+    void increaseFontSize();
+    void decreaseFontSize();
 private:
     QTextEdit *textEdit;
     QString currentFile;
@@ -31,6 +34,10 @@ private:
     QAction *openAction;
     QAction *saveAction;
     QAction *exitAction;
+    QAction *boldAction;
+    QAction *italicAction;
+    QAction *incrementSizeAction;
+    QAction *decrementSizeAction;
 };
 
 #endif // MAINWINDOW_H
