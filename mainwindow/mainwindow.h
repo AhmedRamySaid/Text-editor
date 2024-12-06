@@ -1,14 +1,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <QTextEdit>
 #include <QAction>
-#include <QFileDialog>
-#include <QMessageBox>
-#include <QFile>
-#include <QTextStream>
 #include <QApplication>
+#include <QFile>
+#include <QFileDialog>
+#include <QMainWindow>
+#include <QMessageBox>
+#include <QTextEdit>
+#include <QTextStream>
 
 class MainWindow : public QMainWindow
 {
@@ -18,8 +18,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    private slots:
-        void openFile();
+private slots:
+    void openFile();
     void saveFile();
     void exitApp();
 
@@ -28,6 +28,9 @@ private:
     QString currentFile;
     void createActions();
     void createMenu();
+    QAction *openAction;
+    QAction *saveAction;
+    QAction *exitAction;
 };
 
 #endif // MAINWINDOW_H

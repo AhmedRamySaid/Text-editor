@@ -17,7 +17,6 @@ add_executable(Text_editor main.cpp
         main.cpp
         mainwindow/mainwindow.cpp
         mainwindow/mainwindow.h
-        mainwindow/mainwindow.ui
 )
 target_link_libraries(Text_editor
         Qt::Core

@@ -42,7 +42,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 22,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
@@ -309,23 +309,21 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3,
-				5
+				3
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				4,
-				6
+				4
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				5
 			]
 		}
 	],
@@ -353,17 +351,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "mainwindow/mainwindow.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "mainwindow/mainwindow.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Text_editor_autogen/include/mainwindow/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{

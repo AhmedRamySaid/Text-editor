@@ -124,7 +124,7 @@ build Text_editor_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Text_editor_autogen
 
-build Text_editor_autogen: phony CMakeFiles/Text_editor_autogen Text_editor_autogen/include/mainwindow/ui_mainwindow.h Text_editor_autogen/timestamp Text_editor_autogen/mocs_compilation.cpp Text_editor_autogen_timestamp_deps
+build Text_editor_autogen: phony CMakeFiles/Text_editor_autogen Text_editor_autogen/timestamp Text_editor_autogen/mocs_compilation.cpp Text_editor_autogen_timestamp_deps
 
 
 #############################################
@@ -141,7 +141,7 @@ build Text_editor_autogen/timestamp Text_editor_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles\Text_editor_autogen
 
-build CMakeFiles/Text_editor_autogen Text_editor_autogen/include/mainwindow/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/Text_editor_autogen ${cmake_ninja_workdir}Text_editor_autogen/include/mainwindow/ui_mainwindow.h: phony Text_editor_autogen/timestamp || Text_editor_autogen_timestamp_deps
+build CMakeFiles/Text_editor_autogen | ${cmake_ninja_workdir}CMakeFiles/Text_editor_autogen: phony Text_editor_autogen/timestamp || Text_editor_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
