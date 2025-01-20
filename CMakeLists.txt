@@ -15,8 +15,18 @@ find_package(Qt6 COMPONENTS
 
 add_executable(Text_editor main.cpp
         main.cpp
-        mainwindow/mainwindow.cpp
-        mainwindow/mainwindow.h
+        "Application/TextEditor/TextEditor.cpp"
+        "Application/TextEditor/TextEditor.h"
+        "Application/MainWindow/MainWindow.cpp"
+        "Application/MainWindow/MainWindow.h"
+        "Data Structure/Stack/Stack.cpp"
+        "Data Structure/Stack/Stack.h"
+        "Data Structure/Trie/Trie.cpp"
+        "Data Structure/Trie/Trie.h"
+        "Application/Widget/Widget.cpp"
+        "Application/Widget/Widget.h"
+        "Data Structure/Queue/Queue.cpp"
+        "Data Structure/Queue/Queue.h"
 )
 target_link_libraries(Text_editor
         Qt::Core
